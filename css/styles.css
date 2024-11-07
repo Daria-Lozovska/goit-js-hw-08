@@ -1,0 +1,38 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: calc((100% - 2 * 24)/3);
+}
+
+.gallery-image {
+    width: 360px;
+    height: 200px;
+}
+
+.icon {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: fill 0.3s ease;
+    fill: currentColor;
+}
+
+.gallery-item {
+    cursor: url('./icons/icon-hand'), auto;
+}
