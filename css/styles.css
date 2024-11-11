@@ -14,7 +14,9 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    width: calc((100% - 2 * 24)/3);
+    width: 1128px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .gallery-image {
@@ -22,17 +24,8 @@ img {
     height: 200px;
 }
 
-.icon {
-    width: 44px;
-    height: 44px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: fill 0.3s ease;
-    fill: currentColor;
-}
-
 .gallery-item {
-    cursor: url('./icons/icon-hand'), auto;
+    width: calc((100% - 48px)/3);
+    height: auto;
+    cursor: url('../icons/bxs_hand-down.svg'), auto;
 }
